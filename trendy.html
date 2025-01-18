@@ -365,6 +365,47 @@
             },
         ];
 
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buy Now Button</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+    button {
+      background-color: #4CAF50; /* Green */
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <h1>Product Page</h1>
+  <p>Click the button below to see more details.</p>
+  <button onclick="goToDetails()">Buy Now</button>
+
+  <script>
+    function goToDetails() {
+      // Redirect to the details page
+      window.location.href = "details.html";
+    }
+  </script>
+</body>
+</html>
         function loadProducts() {
             const productContainer = document.querySelector('.product-container');
             productContainer.innerHTML = ""; // Clear previous content
